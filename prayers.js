@@ -10,10 +10,11 @@ function getPrayTimes(){
     .then(response => response.json())
     .then( data => {
         const times = data.data.timings['Fajr'];
+
         cards.innerHTML = "";
+
         for (let time in times){
-            console.log(time);
-            console.log(times[time]);
+            
             cards.innerHTML += 
             `
             <div class="card">
