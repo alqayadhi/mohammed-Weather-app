@@ -4,9 +4,9 @@ it's a very simple and easy to make app, But i was planning to make for real sin
 
 # TODO
 
-- # MUST-have:
-1- Current Time and date.
-2- Location details (City, Continent).
+**MUST-have:**
+- Current Time and date.
+- Location details (City, Continent).
 3- Icons & Future forecast status
 4- Search bar
 5- Prayers time
