@@ -66,6 +66,47 @@ body{
     justify-content: space-between;
 }
 
+.place-container #search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.place-container #search-button{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(rgb(46,150,163),rgb(48,62,143));
+    border-radius:10px ;
+    margin-left: 5px;
+    padding: 11px;
+    border: none;
+    display: inline-block;
+    transition: all .4s ease 0s;
+}
+.place-container #search-button:hover{
+    color: #fff;
+    background: #3c3c44;
+    /*border-color: #ff6768;*/
+    transition: all .4s ease 0s;
+}
+.place-container #search-input{
+    width: 260px;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 8px 0;
+    padding: 8px 0;
+    border-bottom: 3px solid rgb(48,62,143);
+    color: white;
+    outline: none;
+    background: none;
+}
+.place-container input{
+    border: none;
+    color: #ffff;
+}
+
 /* Prayer times */
 .pray{
     /*background:rgba(0, 0, 0, 0.4); */
