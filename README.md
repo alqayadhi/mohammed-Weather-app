@@ -15,4 +15,4 @@ it's a very simple and easy to make app, But i was planning to make for real sin
 - # NICE-to-have:
 - [ ] changeable background according to the weather status
 - [x] more details about sunset, sunrise, ..etc.
-- [x]looks real and great 
+- [x] looks real and great 
