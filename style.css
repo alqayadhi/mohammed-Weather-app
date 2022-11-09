@@ -66,8 +66,6 @@ body{
     justify-content: space-between;
 }
 
-/*search btn*/
-
 .place-container #search-form{
     display: flex;
     justify-content: center;
