@@ -48,30 +48,20 @@
                                 </div>
                                 <p>Fajr</p>
                             </div>
-                            <div class="card">
-                                <div class="circle">
-                                    <svg>
-                                        <Circle cx="45" cy="45" r="45"></Circle>
-                                    </svg>
-                                    <div class="prayTime">12:24</div>
-                                </div>
-                                <p>Dhuhr</p>
-                            </div>
-                            <div class="card">
-                                <div class="circle">
-                                    <svg>
-                                        <Circle cx="45" cy="45" r="45"></Circle>
-                                    </svg>
-                                    <div class="prayTime">14:36</div>
-                                </div>
-                                <p>Asr</p>
-                            </div>
                         </div>
                 </div>
                
             <div class="place-container">
                 <div class="time-zone" id="time-zone">Europe / Amsterdam</div>
                 <div id="country" class="country">NL</div>
+                <form id="search-form">
+                    <input type="search"
+                    placeholder="Enter City Name"
+                    id="search-input"
+                    autocomplete="off"/>
+                    <br>
+                    <button onclick="showWeatherData()" id="search-button">Search</button>
+                </form>
             </div>
         </div>
     </div>

@@ -5,6 +5,8 @@ const timeZone = document.getElementById('time-zone');
 const countryEl = document.getElementById('country');
 const weatherForecastEl = document.getElementById('weather-forecast');
 const currentTempEl = document.getElementById('current-temp');
+const searchInput = document.getElementById("search-input");
+const weatherItem = document.querySelector('.weather-forecast-item ');
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug','Sep', 'Oct', 'Nov', 'Dec'];
@@ -38,7 +40,7 @@ function getWeatherData () {
         .then(response => response.json())
         .then(data => {
             showWeatherData(data);
-        })
+        }).catch(err => alert("Something Went Wrong: Please, Check Your Internet Connection"))
     });
 }
 
@@ -47,6 +49,8 @@ function showWeatherData(data){
 
     timeZone.innerHTML = data.timezone;
     countryEl.innerHTML = data.lat + 'N' + ', ' + data.lon+'E'
+
+
     currentWeatherItemsEl.innerHTML = 
     `<div class="weather-item">
         <div>Humidity</div>

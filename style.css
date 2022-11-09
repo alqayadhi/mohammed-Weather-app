@@ -66,6 +66,49 @@ body{
     justify-content: space-between;
 }
 
+/*search btn*/
+
+.place-container #search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.place-container #search-button{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(rgb(46,150,163),rgb(48,62,143));
+    border-radius:10px ;
+    margin-left: 5px;
+    padding: 11px;
+    border: none;
+    display: inline-block;
+    transition: all .4s ease 0s;
+}
+.place-container #search-button:hover{
+    color: #fff;
+    background: #3c3c44;
+    /*border-color: #ff6768;*/
+    transition: all .4s ease 0s;
+}
+.place-container #search-input{
+    width: 260px;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 8px 0;
+    padding: 8px 0;
+    border-bottom: 3px solid rgb(48,62,143);
+    color: white;
+    outline: none;
+    background: none;
+}
+.place-container input{
+    border: none;
+    color: #ffff;
+}
+
 /* Prayer times */
 .pray{
     /*background:rgba(0, 0, 0, 0.4); */
@@ -181,6 +224,11 @@ body{
     border-radius: 10px ;
     padding: 20px 20px;
     margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.future-forecast .today:hover{
+    transform: scale(1.05);
 }
 
 .future-forecast .today .day{
@@ -209,6 +257,12 @@ body{
     /*border: 1px solid #eeee;*/
     border-radius: 10px;
     padding: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.weather-forecast .weather-forecast-item:hover{
+    transform: scale(1.05);
 }
 
 .weather-forecast .weather-forecast-item .day{
@@ -237,6 +291,10 @@ body{
         font-size: 23px;
     }
 
+    .date-container{
+        transform: translateX(50%);
+    }
+
     .date-container .time{
         font-size: 50px;
     }
@@ -258,16 +316,22 @@ body{
         font-size: 20px;
     }
 
-    .place-container .item-zone{
-        font-size: 20px;
-    }
-
     .current-info .others{
         padding: 12px;
     }
 
     .current-info .others .weather-item{
         font-size: 14px;
+    }
+
+    .pray{
+        display:none ;
+    }
+
+    .place-container #search-form{
+        display: flex;
+        align-items: center;
+        
     }
 }
 
