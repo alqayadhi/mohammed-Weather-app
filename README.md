@@ -1,1 +1,2 @@
-# mohammed-Weather-app
+# Making a Weather & Prayers timer app with public API
+
