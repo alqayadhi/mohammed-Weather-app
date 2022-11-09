@@ -4,3 +4,5 @@ it's a very simple and easy to make app, But i was planning to make for real sin
 
 # TODO
 
+- # must-have:
+1- 
