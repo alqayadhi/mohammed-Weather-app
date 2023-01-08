@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>HYF APP</title>
+    <link rel="stylesheet" rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+S ans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="public/style.css">
+    <title>Weather Status App</title>
 </head>
 <body>
-    
+
     <div class="container">
         <div class="current-info">
             <div class="date-container">
@@ -18,106 +21,35 @@
                 <div class="date" id="date">
                     Monday, 24 May
                 </div>
-
-                <div class="others" id="current-weather-items">
-                    <div class="weather-item">
-                        <div>Humidity</div>
-                        <div>${humidity} %</div>
-                    </div>
-                    <div class="weather-item">
-                        <div>Pressure</div>
-                        <div>${pressure}</div>
-                    </div>
-                    <div class="weather-item">
-                        <div>Wind Speed</div>
-                        <div>${wind_speed}</div>
-                    </div>
-                </div>
             </div>
-            
-                <!-- Prayers times -->
-                <div class="pray">
-                    <div class="pray-title" id='prayer-title'>Prayers Times</div>
-                        <div class="cards">
-                            <div class="card">
-                                <div class="circle">
-                                    <svg>
-                                        <Circle cx="45" cy="45" r="45"></Circle>
-                                    </svg>
-                                    <div class="prayTime">05:43</div>
-                                </div>
-                                <p>Fajr</p>
-                            </div>
-                        </div>
-                </div>
                
             <div class="place-container">
                 <div class="time-zone" id="time-zone">Europe / Amsterdam</div>
                 <div id="country" class="country">NL</div>
-                <form id="search-form">
-                    <input type="search"
-                    placeholder="Enter City Name"
-                    id="search-input"
-                    autocomplete="off"/>
-                    <br>
-                    <button id="search-button">Search</button>
-                </form>
             </div>
         </div>
     </div>
-
-    <div class="future-forecast">
-        <div class="today" id="current-temp">
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-            <div class="other">
-                <div class="day">Monday</div>
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
+    
+    <div class="checkWeather">
+        <div class="card">
+            <h1 class="title">Check the Weather</h2>
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Type your Location..">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-        </div>
-
-        <div class="weather-forecast" id="weather-forecast">
-            <div class="weather-forecast-item">
-                <div class="day">Tue</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Wen</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">The</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Fri</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Sat</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Sun</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
+            <div class="weather loading">
+                <h2 class="city">Weather in Denver</h2>
+                <h1 class="temp">51 °C</h1>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon"/>
+                    <div class="description">Cloudy</div>
+                </div>
+                <div class="humidity">Humidity: 60%</div>
+                <div class="wind">Wind speed: 6.2 km/h</div>
             </div>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="app.js"></script>
-    <script src="prayers.js"></script>
+    
+    <script src="src/app.js"></script>
 </body>
 </html>
