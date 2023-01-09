@@ -5,7 +5,7 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?netherlands');
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
     font-size: 120%;
     overflow: hidden;
 }
@@ -13,7 +13,7 @@ body{
 .container{
     font-family: 'Poppins', sans-serif;
     display: flex;
-    padding: 5px 40px;
+    padding: 0px 40px;
     color: #ffff;
     margin-top: 0;
     flex-direction: column;
@@ -28,7 +28,7 @@ body{
     font-weight: 100;
 }
 .date-container .time{
-    font-size: 70px;
+    font-size: 60px;
 }
 .date-container #am-pm{
     font-size: 30px;
@@ -61,7 +61,7 @@ body{
 }
 
 .card{
-    background: #000000d0;
+    background: #272727d0;
     color: #fff;
     padding: 2em;
     border-radius: 30px;
@@ -80,6 +80,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.fa-location-dot{
+   position: fixed;
+   align-items: center;
+   margin: 19px;
 }
 
 button{
@@ -102,13 +108,13 @@ input.search-bar{
     text-transform: capitalize;
     border: none;
     outline: none;
-    padding: 0.3em 1em;
+    padding: 0.3em 2.5em;
     border-radius: 24px;
     background: #7c7c7c2b;
     color: white;
     font-family: inherit;
     font-size: 105%;
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
 }
 
 h1.temp{
@@ -139,4 +145,31 @@ h1.temp{
     position: absolute;
     top: 0;
     left: 20px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.bottom {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.photo-by {
+    font-style: italic;
+    color: #fff;
+}
+  
+.quote {
+    align-items: end;
+    font-style: italic;
+    margin-left: 20%;
+    color: white;
 }

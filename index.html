@@ -33,10 +33,12 @@
     <div class="checkWeather">
         <div class="card">
             <h1 class="title">Check the Weather</h2>
+                <i class="fa-solid fa-location-dot"></i>
             <div class="search">
                 <input type="text" class="search-bar" placeholder="Type your Location..">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
+            
             <div class="weather loading">
                 <h2 class="city">Weather in Denver</h2>
                 <h1 class="temp">51 °C</h1>
@@ -44,11 +46,23 @@
                     <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon"/>
                     <div class="description">Cloudy</div>
                 </div>
-                <div class="humidity">Humidity: 60%</div>
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="text">
+                        <p>Humidity: 60%</p>
+                    </div> 
+                </div>
                 <div class="wind">Wind speed: 6.2 km/h</div>
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="bottom">
+            <p class="photo-by">Photos by Unsplash</p>
+            <p class="quote">Here are the place</p>
+        </div>
+    </footer>
     
     <script src="src/app.js"></script>
 </body>
