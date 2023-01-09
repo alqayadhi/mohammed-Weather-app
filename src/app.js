@@ -40,7 +40,6 @@ function showWeatherData(data){
 
 let weather = {
     apiKey: "49cc8c821cd2aff9af04c9f98c36eb74", 
-    // apiKey: "ecbb3886f8fe3f8258d1cae670ce6cde", //25edf8923e4ee5e7762dcd621a01458f
     fetchWeather: function (city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" 
         + city 
@@ -81,3 +80,14 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event) 
 });
 
 weather.fetchWeather("Amsterdam");
+
+window.addEventListener("load", () => {
+    fetch('https://api.quotable.io/random?maxLength=60')
+  .then((response) => response.json())
+  .then((results) => {
+    document.querySelector(".quote").innerHTML = `"${results.content}"`;
+  })
+  .catch((error) => {
+    quote.innerHTML = "do your best in this life";
+  });
+})
