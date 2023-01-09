@@ -7,12 +7,11 @@ it's a very simple and easy to make app, But i was planning to make for real sin
 **MUST-have:**
 - [x] Current Time and date.
 - [x] Location details (City, Continent).
-- [x] Icons & Future forecast status
-- [ ] Search bar
-- [x] Prayers time
-- [ ] Change the forecast details according to chosen city in the search bar 
+- [x] Icons with more details.
+- [x] Search bar
 
 - # NICE-to-have:
-- [ ] changeable background according to the weather status
-- [x] more details about sunset, sunrise, ..etc.
-- [x] looks real and great 
+- [x] changeable background according to searched location.
+- [ ] more details about sunset, sunrise, ..etc.
+- [x] set **Amsterdam** location as default.
+- [x] random quote generator.
